@@ -2,17 +2,17 @@ import React from 'react';
 import chai from 'chai';
 import chaiEnzyme from 'chai-enzyme';
 import { shallow } from 'enzyme';
-import BinaryClock from './BinaryClock.jsx';
+import View from './View.jsx';
 
 chai.should();
 chai.use(chaiEnzyme());
 
-describe('<BinaryClock />', () => {
+describe('<View />', () => {
   const props = {
     time: '16:24:07'
   };
 
-  const wrapper = shallow(<BinaryClock {...props} />);
+  const wrapper = shallow(<View {...props} />);
   const div = 'div';
   const containerClassName = 'binary-clock';
   const rowClassName = 'row';

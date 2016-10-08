@@ -5,13 +5,13 @@ const BinaryClock = ({ time }) => {
   const bcds = time2BCDs(time);
 
   const rows = [];
-  bcds.forEach((bcd) => {
+  bcds.forEach((bcd, i) => {
     const row = [];
-    bcd.forEach((bit) => {
+    bcd.forEach((bit, j) => {
       const ledClassName = `led ${bit === 0 ? 'off' : 'on'}`;
-      row.push(<div className={ledClassName}></div>);
+      row.push(<div className={ledClassName} key={j}></div>);
     });
-    rows.push(<div className="row">{row}</div>);
+    rows.push(<div className="row" key={i}>{row}</div>);
   });
 
   return (

@@ -2,6 +2,18 @@
 
 A binary clock is a clock that displays the time of day in a binary format.
 
+> Sometimes, the elegant implementation is just a function.
+>
+> Not a method.
+>
+> Not a class.
+>
+> Not a framework.
+>
+> Just a function. 
+>
+> _John Carmack_
+
 ## How to React
 
 ```bash
