@@ -1,0 +1,38 @@
+.led {
+  float: left;
+  width: 1em;
+  height: 1em;
+  margin: 0.1em;
+  border: 1px solid #AAA;
+}
+
+.off {
+  background-color: #EEE;
+}
+
+.on {
+  background-color: blue;
+}
+
+.row {
+  display: flex;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.binary-clock {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#app {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+}

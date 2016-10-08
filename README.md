@@ -14,6 +14,15 @@ A binary clock is a clock that displays the time of day in a binary format.
 >
 > _John Carmack_
 
+## How to demo
+
+![demo](demo/react-binary-clock-demo.gif "demo")
+
+```bash
+npm i
+npm start
+```
+
 ## How to React
 
 ```bash

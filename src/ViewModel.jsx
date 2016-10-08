@@ -1,11 +1,17 @@
 import React from 'react';
-import moment from 'moment';
 import View from './View.jsx';
+
+const pad = number => (`00${number}`.slice(-2));
+
+const makeTime = () => {
+  const date = new Date();
+  return `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+};
 
 class ViewModel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { time: moment().format('HH:mm:ss') };
+    this.state = { time: makeTime() };
   }
 
   componentDidMount() {
@@ -18,8 +24,7 @@ class ViewModel extends React.Component {
   }
 
   timer() {
-    const time = moment().format('HH:mm:ss');
-    this.setState({ time });
+    this.setState({ time: makeTime() });
   }
 
   render() {

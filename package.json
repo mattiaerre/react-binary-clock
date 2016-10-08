@@ -6,7 +6,9 @@
   "scripts": {
     "coverage": "istanbul cover _mocha src/ -- --compilers js:babel-core/register --compilers jsx:babel-register --recursive",
     "eslint": "eslint --ext .js --ext .jsx --ignore-pattern 'coverage/*' .",
-    "test": "mocha src/ --compilers js:babel-core/register --compilers jsx:babel-register --recursive"
+    "start": "npm run webpack && http-server ./demo",
+    "test": "mocha src/ --compilers js:babel-core/register --compilers jsx:babel-register --recursive",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -34,15 +36,15 @@
     "eslint-config-opentable": "^6.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-react": "^6.3.0",
+    "http-server": "^0.9.0",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.0",
     "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.2",
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "moment": "^2.15.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react": "^15.3.2"
   },
   "keywords": [
     "binary",
