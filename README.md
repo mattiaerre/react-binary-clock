@@ -28,6 +28,11 @@ npm i -D enzyme chai-enzyme
 npm i -D react-addons-test-utils
 ```
 
+```bash
+npm un -D istanbul
+npm i -D istanbul@^1.1.0-alpha.1
+```
+
 ```json
 {
   "test": "mocha --compilers js:babel-core/register --compilers jsx:babel-register"
