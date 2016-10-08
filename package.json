@@ -6,7 +6,7 @@
   "scripts": {
     "coverage": "istanbul cover _mocha test --  --recursive",
     "eslint": "eslint --ext .js --ext .jsx --ignore-pattern 'coverage/*' .",
-    "test": "mocha src/BinaryClock.spec.js --compilers js:babel-core/register"
+    "test": "mocha src/ --compilers js:babel-core/register --compilers jsx:babel-register"
   },
   "repository": {
     "type": "git",
