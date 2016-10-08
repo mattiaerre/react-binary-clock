@@ -2,7 +2,7 @@
 
 react-binary-clock
 
-## How to react
+## How to React
 
 ```bash
 yo bdd
