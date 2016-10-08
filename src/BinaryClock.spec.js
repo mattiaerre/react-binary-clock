@@ -13,15 +13,16 @@ describe('<BinaryClock />', () => {
   };
 
   const wrapper = shallow(<BinaryClock {...props} />);
+  const div = 'div';
   const containerClassName = 'binary-clock';
   const rowClassName = 'row';
   const ledClassName = 'led';
   const onClassName = 'on';
   const offClassName = 'off';
 
-  it('its type should equal div', () => {
+  it(`its type should equal "${div}"`, () => {
     const type = wrapper.type();
-    type.should.equal('div');
+    type.should.equal(div);
   });
 
   it(`it should have className "${containerClassName}"`, () => {
