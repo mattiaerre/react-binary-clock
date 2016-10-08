@@ -1,6 +1,6 @@
 # react-binary-clock
 
-react-binary-clock
+A binary clock is a clock that displays the time of day in a binary format.
 
 ## How to React
 
