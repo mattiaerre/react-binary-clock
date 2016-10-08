@@ -1,6 +1,6 @@
 {
   "name": "react-binary-clock",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "A binary clock is a clock that displays the time of day in a binary format.",
   "main": "index.js",
   "scripts": {
