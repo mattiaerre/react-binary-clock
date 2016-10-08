@@ -8,7 +8,8 @@ const BinaryClock = ({ time }) => {
   bcds.forEach((bcd) => {
     const row = [];
     bcd.forEach((bit) => {
-      row.push(<div className="led"></div>);
+      const ledClassName = `led ${bit === 0 ? 'off' : 'on'}`;
+      row.push(<div className={ledClassName}></div>);
     });
     rows.push(<div className="row">{row}</div>);
   });
@@ -25,5 +26,3 @@ BinaryClock.propTypes = {
 };
 
 export default BinaryClock;
-
-// wake me up when September ends ... wait ... it's almost November :sweat_smile:

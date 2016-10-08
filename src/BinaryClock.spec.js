@@ -16,6 +16,8 @@ describe('<BinaryClock />', () => {
   const containerClassName = 'binary-clock';
   const rowClassName = 'row';
   const ledClassName = 'led';
+  const onClassName = 'on';
+  const offClassName = 'off';
 
   it('its type should equal div', () => {
     const type = wrapper.type();
@@ -32,6 +34,16 @@ describe('<BinaryClock />', () => {
 
   it(`it should have exactly 24 descendants w/ className "${ledClassName}"`, () => {
     wrapper.should.have.exactly(24).descendants(`.${ledClassName}`);
+  });
+
+  describe(`given time is "${props.time}"`, () => {
+    it(`it should have exactly 8 descendants w/ className "${onClassName}"`, () => {
+      wrapper.should.have.exactly(8).descendants(`.${onClassName}`);
+    });
+
+    it(`it should have exactly 16 descendants w/ className "${offClassName}"`, () => {
+      wrapper.should.have.exactly(16).descendants(`.${offClassName}`);
+    });
   });
 });
 
