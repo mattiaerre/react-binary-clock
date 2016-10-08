@@ -15,8 +15,8 @@ npm i -S react react-dom
 ```bash
 npm i -D webpack
 npm i -D babel-core babel-loader babel-preset-es2015 babel-preset-react
-npm i -D babel-eslint eslint eslint-config-opentable eslint-plugin-react
-npm i -D enzyme sinon-chai
+npm i -D babel-eslint eslint eslint-config-opentable eslint-plugin-react eslint-plugin-import
+npm i -D enzyme chai-enzyme
 ```
 
 ```bash
