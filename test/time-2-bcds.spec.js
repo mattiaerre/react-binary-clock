@@ -1,5 +1,5 @@
 const chai = require('chai');
-const time2BCDs = require('./time-2-bcds');
+const time2BCDs = require('../src/time-2-bcds');
 
 chai.should();
 

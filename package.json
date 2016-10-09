@@ -4,10 +4,10 @@
   "description": "A binary clock is a clock that displays the time of day in a binary format.",
   "main": "index.js",
   "scripts": {
-    "coverage": "istanbul cover _mocha src/ -- --compilers js:babel-core/register --compilers jsx:babel-register --recursive",
+    "coverage": "istanbul cover _mocha -- --compilers js:babel-core/register --compilers jsx:babel-register --recursive",
     "eslint": "eslint --ext .js --ext .jsx --ignore-pattern 'coverage/*' .",
     "start": "npm run webpack && http-server ./demo",
-    "test": "mocha src/ --compilers js:babel-core/register --compilers jsx:babel-register --recursive",
+    "test": "mocha --compilers js:babel-core/register --compilers jsx:babel-register --recursive",
     "webpack": "webpack"
   },
   "repository": {
@@ -35,7 +35,7 @@
     "eslint": "^3.7.1",
     "eslint-config-opentable": "^6.0.0",
     "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-react": "^6.3.0",
+    "eslint-plugin-react": "^6.4.0",
     "http-server": "^0.9.0",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.1.0",

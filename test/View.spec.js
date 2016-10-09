@@ -2,7 +2,7 @@ import React from 'react';
 import chai from 'chai';
 import chaiEnzyme from 'chai-enzyme';
 import { shallow } from 'enzyme';
-import View from './View.jsx';
+import View from '../src/View.jsx';
 
 chai.should();
 chai.use(chaiEnzyme());

@@ -1,5 +1,5 @@
 const chai = require('chai');
-const digit2BCD = require('./digit-2-bcd');
+const digit2BCD = require('../src/digit-2-bcd');
 
 chai.should();
 
