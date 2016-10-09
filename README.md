@@ -41,6 +41,8 @@ in order to see the binary clock in action; if you need an example you can have 
 
 ## Demo
 
+![demo](demo/react-binary-clock-demo.gif "demo")
+
 Clone or download this GitHub repository then run a live demo using the following npm commands:
 
 ```bash
@@ -56,5 +58,3 @@ Available on:
   http://127.0.0.1:8080
   http://192.168.0.12:8080
 ```
-
-![demo](demo/react-binary-clock-demo.gif "demo")
