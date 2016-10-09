@@ -14,49 +14,47 @@ A binary clock is a clock that displays the time of day in a binary format.
 >
 > _John Carmack_
 
-## How to demo
+## Usage
 
-![demo](demo/react-binary-clock-demo.gif "demo")
+Install via npm using the following npm command:
+
+```bash
+npm i -S react-binary-clock
+```
+
+Include and use the component within your React application:
+
+```javascript
+import BinaryClock from 'react-binary-clock';
+
+// example
+render(
+  <div>
+    <BinaryClock />
+  </div>,
+  document.getElementById('app')
+);
+```
+
+> N.B.: This component is completely **style-less** which means that you need to add your own CSS to your React app 
+in order to see the binary clock in action; if you need an example you can have a look at the [CSS include in the demo app](demo/style.css)
+
+## Demo
+
+Clone or download this GitHub repository then run a live demo using the following npm commands:
 
 ```bash
 npm i
 npm start
 ```
 
-## How to React
+You should be able to see something like this into your terminal:
 
 ```bash
-yo bdd
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.0.12:8080
 ```
 
-```bash
-npm i -S react react-dom
-```
-
-```bash
-npm i -D webpack
-npm i -D babel-core babel-loader babel-preset-es2015 babel-preset-react
-npm i -D babel-eslint eslint eslint-config-opentable eslint-plugin-react eslint-plugin-import
-```
-
-```bash
-touch .babelrc
-touch .eslintrc
-```
-
-```bash
-npm i -D enzyme chai-enzyme
-npm i -D react-addons-test-utils
-```
-
-```bash
-npm un -D istanbul
-npm i -D istanbul@^1.1.0-alpha.1
-```
-
-```json
-{
-  "test": "mocha --compilers js:babel-core/register --compilers jsx:babel-register"
-}
-```
-> The command above enables you to watch also .jsx files when you use the `--watch` flag w/ mocha
+![demo](demo/react-binary-clock-demo.gif "demo")
