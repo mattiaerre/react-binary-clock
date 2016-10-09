@@ -1,22 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  entry: './demo/index.jsx',
+  entry: './src/Demo.jsx',
   output: {
-    filename: 'bundle.js',
-    path: path.join(__dirname, 'demo')
+    path: path.resolve(__dirname, 'demo'),
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'src')
-      },
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'demo')
+        test: /\.jsx$/,
+        loaders: ['babel']
       }
     ]
   }
